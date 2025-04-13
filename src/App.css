@@ -1,0 +1,10 @@
+.fixed-side-menu {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow-y: auto;
+  height: 100vh;
+}

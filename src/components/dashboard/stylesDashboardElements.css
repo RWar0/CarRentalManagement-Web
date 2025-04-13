@@ -1,0 +1,20 @@
+.activitiesBadgeButton {
+    padding: 4px 12px 4px 12px;
+    background-color: var(--additionalColor3);
+    font-weight: 500;
+    border: 1px solid var(--mainColor1);
+    border-radius: 20px;
+    margin-left: 25px;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    
+    &:hover {
+        background-color: var(--mainColor1);
+        border: 1px solid #398b4f;
+    }
+    &:active {
+        background-color: #398b4f;
+        color: white;
+    }
+}

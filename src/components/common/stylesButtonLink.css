@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Orbitron:wght@400..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Mogra&family=Orbitron:wght@400..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+/* Button Links for .tsx */
+
+.buttonLink-nonActive {
+    background-color: var(--mainColor1);
+    text-decoration: none;
+    color: white;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "Geist", serif;
+    letter-spacing: 2.5px;
+    
+    &:hover {
+        color: var(--mainColor3);
+
+        & .myCategoryIcon {
+            animation: sideMenuButtonSidewayAnimation 0.8s infinite alternate ease-in-out;
+            color: var(--additionalColor2) !important;
+        }
+        
+        & .myRolldownIcon {
+            transform: rotate(-90deg) translateX(1px) translateY(4px) !important;
+            color: var(--additionalColor2);
+        }
+        
+        & .myRolldownIcon-opened {
+            transform: rotate(0deg) translateX(4px) !important;
+            color: var(--additionalColor2);
+        }
+    }
+}
+
+.myRolldownIcon {
+    transition: transform 0.15s ease-in-out;
+}
+
+.myRolldownIcon-opened {
+    transition: transform 0.15s ease-in-out;
+    transform: rotate(-90deg) translateY(4px) !important;
+}
+
+.buttonLink-active {
+    text-decoration: none;
+    color: var(--additionalColor2);
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "Geist", serif;
+    letter-spacing: 2.5px;
+    
+    & .myCategoryIcon {
+        color: var(--additionalColor2) !important;
+    }
+    
+    &:hover {
+        color: var(--mainColor3);
+
+        & span {
+            animation: sideMenuButtonSidewayAnimation 0.8s infinite alternate ease-in-out;
+            color: var(--mainColor3) !important;
+        }
+    }
+}
+
+@keyframes sideMenuButtonSidewayAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Smaller sublist of button links */
+.small-buttonLink-nonActive {
+    margin-left: 20px !important;
+    background-color: var(--mainColor1);
+    text-decoration: none;
+    color: white;
+    min-height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Geist", serif;
+    letter-spacing: 2.5px;
+    
+    &:hover {
+        color: var(--mainColor3);
+
+        & .myCategoryIcon {
+            animation: sideMenuButtonSidewayAnimation 0.8s infinite alternate ease-in-out;
+            color: var(--additionalColor2) !important;
+        }
+        
+        & .myRolldownIcon {
+            transform: rotate(-90deg) translateX(1px) translateY(4px) !important;
+            color: var(--additionalColor2);
+        }
+        
+        & .myRolldownIcon-opened {
+            transform: rotate(0deg) translateX(4px) !important;
+            color: var(--additionalColor2);
+        }
+    }
+}
+
+.small-buttonLink-active {
+    margin: 0px 0px 0px 20px !important;
+    text-decoration: none;
+    color: var(--additionalColor2);
+    min-height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Geist", serif;
+    letter-spacing: 2.5px;
+    
+    & .myCategoryIcon {
+        color: var(--additionalColor2) !important;
+    }
+    
+    &:hover {
+        color: var(--mainColor3);
+
+        & span {
+            animation: sideMenuButtonSidewayAnimation 0.8s infinite alternate ease-in-out;
+            color: var(--mainColor3) !important;
+        }
+    }
+}
+
+/* Top Menu Button Links */
+
+.topMenuButtonLink-nonActive {
+    padding: 0px 0px 0px 25px;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-size: 17px;
+
+    &:hover {
+        color: var(--additionalColor1);
+    }
+}
+
+.topMenuButtonLink-active {
+    padding: 0px 0px 0px 25px;
+    color: rgb(252, 255, 226);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgb(96, 154, 185);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: var(--additionalColor1);
+    }
+}
+
+.topSubMenuButtonLink-nonActive {
+    padding: 5px 0px 5px 25px;
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+
+    &:hover {
+        color: var(--additionalColor1);
+    }
+}
+
+.topSubMenuButtonLink-active {
+    padding: 5px 0px 5px 25px;
+    color: var(--mainColor1);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px var(--mainColor2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: var(--additionalColor2);
+    }
+}
+
+/* SideMenu Offcanvas */
+.closeSideMenuOffCanvasBtn {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 3px solid white;
+    
+    transition: all 0.15s ease-in-out;
+    
+    & span {
+        border: none;
+        color: white;
+        transition: all 0.15s ease-in-out;
+    }
+    
+    &:hover {
+        border-color: var(--additionalColor2);
+        transform: scale(1.04);
+        & span {
+            color: var(--additionalColor2);
+        }
+    }
+}
