@@ -7,4 +7,4 @@ There are Customers, Rentals, Vehicles and Services categories. In each of them 
 Both the React app and the ASP.NET api require API_KEY for connection.
 
 For testing purposes there is required to create .env file and insert:
-VITE_API_KEY=CarRentalManagement_Api-Key!
+<b>VITE_API_KEY=CarRentalManagement_Api-Key!</b>
